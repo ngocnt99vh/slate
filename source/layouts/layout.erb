@@ -41,6 +41,13 @@ under the License.
   </head>
 
   <body class="<%= page_classes %>">
+    <div class="header">
+      <blockquote>
+        <p>Version: v1</p>
+      </blockquote>
+      <%= image_tag "logo.png" %>
+      <div class="clear"></div>
+    </div>
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -48,7 +55,6 @@ under the License.
       </span>
     </a>
     <div class="tocify-wrapper">
-      <%= image_tag "logo.png" %>
       <% if language_tabs %>
         <div class="lang-selector">
           <% language_tabs.each do |lang| %>
